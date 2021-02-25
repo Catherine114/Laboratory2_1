@@ -34,10 +34,6 @@ h3::selection {
 	height: 80%;
 	width: 80%;
 }
-.img4 {
-	height: 180%;
-	width: 180%;
-}
 
 .img3 {
 	height: 36%;
@@ -52,35 +48,40 @@ h3::selection {
 .flex-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: nowrap;
 }
 
 .flex-container2{
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .flex-container3{
   display: flex;
-  align-content: stretch;
-  flex-flow: row nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+
 }
 
 .my-flex-block6{
-	order: 0;
+	flex-grow: 1;
+	order: -1;
 	flex-basis: content;
 }
 .my-flex-block5{
+	flex-grow: 1;
 	order: 0;
+	align-self: auto;
+	flex-shrink: 1;
 }
 .my-flex-block4{
-	align-self: auto;
-	flex-grow: 0;
-	flex-shrink: 0;
-	order: 0;
+	order: -1;
 }
 header {
 	background: linear-gradient(to bottom, #ffffff -15%, #ffcc99 100%);
