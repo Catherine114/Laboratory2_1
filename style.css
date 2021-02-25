@@ -1,8 +1,93 @@
 body {
-	background: linear-gradient(to bottom, #ffcc99 -7%, #9999ff 120%);
+	background: linear-gradient(to bottom, #ffcc99 -7%, #9999ff 130%);
 }
 
-img {
-	height: 30%;
-	width: 30%;
+h1, h3, p, figcaption {
+	font-family: 'Montserrat', sans-serif;
+	color: #191970;
+}
+
+p, figcaption::selection {
+	background: #FFEFD5;
+}
+h1::selection {
+	background: #FFEFD5;
+}
+h3::selection {
+	background: #FFEFD5;
+}
+.img1, .img8 {
+	height: 38%;
+	width: 38%;
+}
+
+.img2 {
+	height: 26%;
+	width: 26%;
+}
+
+.img7{
+	height: 49%;
+	width: 49%;
+}
+.img5 {
+	height: 80%;
+	width: 80%;
+}
+.img4 {
+	height: 180%;
+	width: 180%;
+}
+
+.img3 {
+	height: 36%;
+	width: 36%;
+}
+
+.img6 {
+	height: 45%;
+	width: 45%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex-container2{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.flex-container3{
+  display: flex;
+  align-content: stretch;
+  flex-flow: row nowrap;
+}
+
+.my-flex-block6{
+	order: 0;
+	flex-basis: content;
+}
+.my-flex-block5{
+	order: 0;
+}
+.my-flex-block4{
+	align-self: auto;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 0;
+}
+header {
+	background: linear-gradient(to bottom, #ffffff -15%, #ffcc99 100%);
+	padding: 2%;
+}
+
+footer {
+	background: linear-gradient(to bottom, #cc99ff 0%, #660033 120%);
+	padding: 2%;
 }
